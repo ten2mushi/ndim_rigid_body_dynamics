@@ -4,7 +4,7 @@
 Implementation of "N-Dimensional Rigid Body Dynamics" (https://web.engr.oregonstate.edu/~mjb/cs550/Projects/Papers/RigidBodyDynamics.pdf)
 
 ## utils/quadcopter.rs
-Rotors and Bivectors used to a create a simple quadcopter simulator (instead of using quat)
+Rotors and Bivectors used to a create a simple quadcopter simulator (instead of using quaternions)
 
 ## lib.rs
 Quadcopter simulator as a python package which can be installed in Blender env
