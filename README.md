@@ -13,14 +13,19 @@ Quadcopter simulator as a python package which can be installed in Blender env
 # to use in blender
 ## download repository & cd into then
 ```python -m venv venv```
+
 ```source venv/bin/activate```
+
 ```pip install maturin```
+
 ```pip install numpy```
+
 ```maturin build --release --out dist```
 
 ## Install to Blender's Python
 make sure venv python and blender python are both same version
 you need to change paths (blender python and whl build)
+
 ```sudo /Applications/Blender.app/Contents/Resources/4.3/python/bin/python3.11 -m pip install --force-reinstall dist/rotors_quad_sim-0.1.0-cp311-cp311-macosx_11_0_arm64.whl```
 
 
