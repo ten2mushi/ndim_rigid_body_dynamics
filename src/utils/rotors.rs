@@ -483,10 +483,6 @@ impl<T: Scalar, const N: usize> Bivector<T, N> {
         // [1] = xz plane (pitch)
         // [2] = yz plane (roll)
         
-        // convert bivector components to Euler angles
-        // note: This is a simplified conversion that assumes small angles
-        
-        // Get components in correct order for roll-pitch-yaw
         let roll = self.get(1, 2);   // yz plane rotation
         let pitch = self.get(2, 0);  // xz plane rotation
         let yaw = self.get(0, 1);    // xy plane rotation
