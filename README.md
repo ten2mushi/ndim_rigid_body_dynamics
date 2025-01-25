@@ -1,27 +1,30 @@
-# utils/rotors.rs:
+
+# repo org
+## utils/rotors.rs:
 Implementation of "N-Dimensional Rigid Body Dynamics" (https://web.engr.oregonstate.edu/~mjb/cs550/Projects/Papers/RigidBodyDynamics.pdf)
 
-# utils/quadcopter.rs
+## utils/quadcopter.rs
 Rotors and Bivectors used to a create a simple quadcopter simulator (instead of using quat)
 
-# lib.rs
+## lib.rs
 Quadcopter simulator as a python package which can be installed in Blender env
 
-# download repository then
-python -m venv venv
-source venv/bin/activate
-pip install maturin
-pip install numpy
 
-# Build new wheel
-maturin build --release --out dist
+# to use in blender
+## download repository & cd into then
+```python -m venv venv```
+```source venv/bin/activate```
+```pip install maturin```
+```pip install numpy```
+```maturin build --release --out dist```
 
-# Install to Blender's Python (with sudo) (make sure venv python and blender python are both same version)
-sudo /Applications/Blender.app/Contents/Resources/4.3/python/bin/python3.11 -m pip install --force-reinstall dist/rotors_quad_sim-0.1.0-cp311-cp311-macosx_11_0_arm64.whl
-(blender python path + wheel build path)
+## Install to Blender's Python
+make sure venv python and blender python are both same version
+you need to change paths (blender python and whl build)
+```sudo /Applications/Blender.app/Contents/Resources/4.3/python/bin/python3.11 -m pip install --force-reinstall dist/rotors_quad_sim-0.1.0-cp311-cp311-macosx_11_0_arm64.whl```
 
 
-# in a blender script:
+## open blender and a script:
 
 ```python
 import site
